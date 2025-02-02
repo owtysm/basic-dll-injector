@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace basic_dll_injector
@@ -17,7 +12,7 @@ namespace basic_dll_injector
         public ProcessPicker()
         {
             InitializeComponent();
-            foreach (Process process in Process.GetProcesses().Where(p => !string.IsNullOrEmpty(p.MainWindowTitle)).Distinct())
+            foreach (Process process in Process.GetProcesses().Where(p => !string.IsNullOrEmpty(p.MainWindowTitle)))
             {
                 flowLayoutPanel1.Controls.Add(new ProcessHolderControl(process, this));
             }

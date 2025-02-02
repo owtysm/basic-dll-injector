@@ -1,5 +1,4 @@
-﻿using basic_dll_injector.Properties;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
