@@ -44,9 +44,12 @@
             this.cuiLabel1.Size = new System.Drawing.Size(957, 14);
             this.cuiLabel1.TabIndex = 5;
             this.cuiLabel1.Click += new System.EventHandler(this.cuiLabel1_Click);
+            this.cuiLabel1.MouseEnter += new System.EventHandler(this.cuiLabel1_MouseEnter);
+            this.cuiLabel1.MouseLeave += new System.EventHandler(this.cuiLabel1_MouseLeave);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
@@ -63,7 +66,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ProcessHolderControl";
-            this.Size = new System.Drawing.Size(192, 25);
+            this.Size = new System.Drawing.Size(172, 25);
             this.Click += new System.EventHandler(this.cuiLabel1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

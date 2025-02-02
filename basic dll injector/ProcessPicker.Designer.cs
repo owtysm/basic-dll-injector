@@ -32,15 +32,19 @@
             this.cuiButton3 = new CuoreUI.Controls.cuiButton();
             this.cuiButton1 = new CuoreUI.Controls.cuiButton();
             this.cuiLabel1 = new CuoreUI.Controls.cuiLabel();
+            this.cuiSeparator1 = new CuoreUI.Controls.cuiSeparator();
+            this.cuiSeparator2 = new CuoreUI.Controls.cuiSeparator();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 25);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 282);
             this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.WrapContents = false;
             // 
             // cuiButton3
             // 
@@ -124,11 +128,35 @@
             this.cuiLabel1.Size = new System.Drawing.Size(193, 15);
             this.cuiLabel1.TabIndex = 5;
             // 
+            // cuiSeparator1
+            // 
+            this.cuiSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cuiSeparator1.Location = new System.Drawing.Point(12, 24);
+            this.cuiSeparator1.Name = "cuiSeparator1";
+            this.cuiSeparator1.SeparatorMargin = 0;
+            this.cuiSeparator1.Size = new System.Drawing.Size(192, 1);
+            this.cuiSeparator1.TabIndex = 0;
+            this.cuiSeparator1.Thickness = 1F;
+            this.cuiSeparator1.Vertical = false;
+            // 
+            // cuiSeparator2
+            // 
+            this.cuiSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cuiSeparator2.Location = new System.Drawing.Point(12, 306);
+            this.cuiSeparator2.Name = "cuiSeparator2";
+            this.cuiSeparator2.SeparatorMargin = 0;
+            this.cuiSeparator2.Size = new System.Drawing.Size(192, 1);
+            this.cuiSeparator2.TabIndex = 6;
+            this.cuiSeparator2.Thickness = 1F;
+            this.cuiSeparator2.Vertical = false;
+            // 
             // ProcessPicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(217, 350);
+            this.Controls.Add(this.cuiSeparator2);
+            this.Controls.Add(this.cuiSeparator1);
             this.Controls.Add(this.cuiLabel1);
             this.Controls.Add(this.cuiButton1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -146,5 +174,7 @@
         private CuoreUI.Controls.cuiButton cuiButton3;
         private CuoreUI.Controls.cuiButton cuiButton1;
         public CuoreUI.Controls.cuiLabel cuiLabel1;
+        private CuoreUI.Controls.cuiSeparator cuiSeparator1;
+        private CuoreUI.Controls.cuiSeparator cuiSeparator2;
     }
 }

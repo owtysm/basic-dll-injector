@@ -51,5 +51,15 @@ namespace basic_dll_injector
             pp.SelectedProcess = process;
             pp.cuiLabel1.Content = $"Selected: {process.ProcessName}.exe";
         }
+
+        private void cuiLabel1_MouseEnter(object sender, System.EventArgs e)
+        {
+            cuiLabel1.BackColor = SystemColors.ControlLight;
+        }
+
+        private void cuiLabel1_MouseLeave(object sender, System.EventArgs e)
+        {
+            cuiLabel1.BackColor = SystemColors.Control;
+        }
     }
 }
