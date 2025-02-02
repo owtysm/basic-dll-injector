@@ -45,9 +45,12 @@ namespace basic_dll_injector
 
             WaitForSingleObject(remoteThread, INFINITE);
             VirtualFreeEx(processHandle, pMemory, 0, 0x8000);
+            CloseHandle(processHandle);
+
             MessageBox.Show("DLL injected successfully.");
         }
     }
+
 
     public static class InjectorImports
     {
@@ -74,6 +77,10 @@ namespace basic_dll_injector
 
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern bool VirtualFreeEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint dwFreeType);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern bool CloseHandle(IntPtr hObject);
+
 
         public const uint PROCESS_ALL_ACCESS = 0x1F0FFF;
         public const uint MEM_COMMIT = 0x00001000;

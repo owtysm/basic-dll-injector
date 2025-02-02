@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cuiLabel1 = new CuoreUI.Controls.cuiLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cuiLabel1
+            // 
+            this.cuiLabel1.Content = "Process\\.exe";
+            this.cuiLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cuiLabel1.ForeColor = System.Drawing.Color.Gray;
+            this.cuiLabel1.HorizontalAlignment = CuoreUI.Controls.cuiLabel.HorizontalAlignments.Left;
+            this.cuiLabel1.Location = new System.Drawing.Point(26, 5);
+            this.cuiLabel1.Name = "cuiLabel1";
+            this.cuiLabel1.Size = new System.Drawing.Size(957, 14);
+            this.cuiLabel1.TabIndex = 5;
+            this.cuiLabel1.Click += new System.EventHandler(this.cuiLabel1_Click);
             // 
             // pictureBox1
             // 
@@ -42,18 +54,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.cuiLabel1_Click);
-            // 
-            // cuiLabel1
-            // 
-            this.cuiLabel1.Content = "Process\\.exe";
-            this.cuiLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cuiLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.cuiLabel1.HorizontalAlignment = CuoreUI.Controls.cuiLabel.HorizontalAlignments.Left;
-            this.cuiLabel1.Location = new System.Drawing.Point(26, 5);
-            this.cuiLabel1.Name = "cuiLabel1";
-            this.cuiLabel1.Size = new System.Drawing.Size(957, 19);
-            this.cuiLabel1.TabIndex = 5;
-            this.cuiLabel1.Click += new System.EventHandler(this.cuiLabel1_Click);
             // 
             // ProcessHolderControl
             // 

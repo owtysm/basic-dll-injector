@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace basic_dll_injector
@@ -44,7 +38,7 @@ namespace basic_dll_injector
 
         private void cuiButton2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog() {Filter= "DLL Files|*.dll" };
+            OpenFileDialog ofd = new OpenFileDialog() { Filter = "DLL Files|*.dll" };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 selectedFilePath = ofd.FileName;
