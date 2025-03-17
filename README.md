@@ -3,7 +3,7 @@
 # Basic DLL Injector
 This is the simplest kind of a C# WinForms dll injector you can make.
 
-UI Frontend made with my WinForms UI Library CuoreUI - https://github.com/17owh/CuoreUI
+UI Frontend made with my WinForms UI Library CuoreUI - https://github.com/7owh/CuoreUI
 
 You're probably only interested in the Injector.cs class: https://github.com/7owh/basic-dll-injector/blob/master/basic%20dll%20injector/Injector.cs
 
@@ -11,6 +11,6 @@ You're probably only interested in the Injector.cs class: https://github.com/7ow
 
 Don't hesitate to reach out, I respect everyone!
 
-![Discord logo](https://github.com/user-attachments/assets/1eb8e84b-de53-406a-94fa-37f94dc82847) Let's talk on Discord: [@itzkxhu](https://discord.com/)
+![Discord logo](https://i.imgur.com/BvvyqHK.png) Let's talk on Discord: [@sevenow](https://discord.com/)
 
-![YouTube logo](https://github.com/user-attachments/assets/dc8bc4f8-e613-4d04-922d-dce2def52e02) I have a YouTube channel: [@itzkxhu](https://www.youtube.com/@itzkxhu)
+![YouTube logo](https://i.imgur.com/OOAQDD5.png) I have a YouTube channel: [@sevenowh](https://m.youtube.com/@sevenowh)
