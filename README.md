@@ -3,6 +3,6 @@
 # Basic DLL Injector
 This is the simplest kind of a C# WinForms dll injector you can make.
 
-UI Frontend made with my WinForms UI Library CuoreUI - https://github.com/7owh/CuoreUI
+UI Frontend made with my WinForms UI Library CuoreUI - https://github.com/owtysm/CuoreUI
 
-You're probably only interested in the Injector.cs class: https://github.com/7owh/basic-dll-injector/blob/master/basic%20dll%20injector/Injector.cs
+You're probably only interested in the Injector.cs class: https://github.com/owtysm/basic-dll-injector/blob/master/basic%20dll%20injector/Injector.cs
