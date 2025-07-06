@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b472b076-d027-4bf9-a0a7-c296d9830de6)
+![image](https://github.com/user-attachments/assets/bbba4189-73aa-41aa-a1a5-09cc56c38c69)
 
 # Basic DLL Injector
 This is the simplest kind of a C# WinForms dll injector you can make.
