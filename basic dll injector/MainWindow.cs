@@ -23,7 +23,12 @@ namespace basic_dll_injector
 
         private void cuiButton3_Click(object sender, EventArgs e)
         {
-            var pp = new ProcessPicker();
+            ShowPicker(true);
+        }
+
+        private void ShowPicker(bool byWindow)
+        {
+            var pp = new ProcessPicker(byWindow);
             if (pp.ShowDialog() == DialogResult.OK)
             {
                 if (pp.SelectedProcess == null)
@@ -62,12 +67,19 @@ namespace basic_dll_injector
             {
                 cuiButton1.NormalBackground = Color.Gray;
                 cuiButton1.Enabled = false;
+                cuiButton1.Cursor = Cursors.No;
             }
             else
             {
                 cuiButton1.NormalBackground = Color.FromArgb(96, 106, 255);
                 cuiButton1.Enabled = true;
+                cuiButton1.Cursor = Cursors.Hand;
             }
+        }
+
+        private void cuiButton4_Click(object sender, EventArgs e)
+        {
+            ShowPicker(false);
         }
     }
 }

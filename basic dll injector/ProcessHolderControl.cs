@@ -2,10 +2,11 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using CuoreUI.Controls;
 
 namespace basic_dll_injector
 {
-    public partial class ProcessHolderControl : UserControl
+    public partial class ProcessHolderControl : cuiButtonGroup
     {
         ProcessPicker pp;
         Process process;
@@ -13,11 +14,13 @@ namespace basic_dll_injector
         {
             InitializeComponent();
 
+            SetStyle(ControlStyles.ResizeRedraw, true);
+
             pp = _pp;
             process = _process;
 
-            cuiLabel1.Content = process.MainWindowTitle;
-            pictureBox1.Image = GetProcessIconBitmap(process);
+            Content = _pp.ChooseByWindow ? process.MainWindowTitle : $"{process.Id} | {process.ProcessName}";
+            Image = GetProcessIconBitmap(process);
         }
 
         private Image GetProcessIconBitmap(Process process)
@@ -40,8 +43,6 @@ namespace basic_dll_injector
                 Visible = false;
                 process = null;
                 pp = null;
-                cuiLabel1.Dispose();
-                pictureBox1.Dispose();
             }
             return null;
         }
@@ -50,16 +51,6 @@ namespace basic_dll_injector
         {
             pp.SelectedProcess = process;
             pp.cuiLabel1.Content = $"Selected: {process.ProcessName}.exe";
-        }
-
-        private void cuiLabel1_MouseEnter(object sender, System.EventArgs e)
-        {
-            cuiLabel1.BackColor = SystemColors.ControlLight;
-        }
-
-        private void cuiLabel1_MouseLeave(object sender, System.EventArgs e)
-        {
-            cuiLabel1.BackColor = SystemColors.Control;
         }
     }
 }
